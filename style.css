@@ -1,7 +1,8 @@
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Saira Condensed', sans-serif;
+  color: #a5b4fc;
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: #eef2ff;
   grid-row: 1 / 6;
 
   display: grid;
@@ -20,8 +21,16 @@ body {
 }
 
 .sidebar > div {
-  border: 1px solid black;
+
   text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar > div p {
+  font-weight: 800;
+  margin-left: 10px;
+  text-align: left;
 }
 
 .logo {
@@ -29,6 +38,27 @@ body {
 
   display: flex;
   flex-direction: row;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home img {
+  height: auto;
+  width: 15%;
+  margin-left: 10px;
+}
+
+.profile img {
+  height: auto;
+  width: 15%;
+  margin-left: 10px;
+}
+
+.sidebar .logo img {
+  height: auto;
+  width: 20%;
+  margin-right: 5px;
 }
 
 .communities {
@@ -131,7 +161,3 @@ body {
   grid-row: 5 / 8;
 }
 
-.logo > img {
-  height: auto;
-  width: 20%;
-}
