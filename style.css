@@ -10,11 +10,6 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
 }
 
-.header {
-  background-color: yellow;
-  grid-column: 2 / 6;
-}
-
 .sidebar {
   background-color: blue;
   grid-row: 1 / 6;
@@ -34,6 +29,34 @@ body {
 
 .communities {
   grid-row: 8 / 10;
+}
+
+.header {
+  background-color: yellow;
+  grid-column: 2 / 6;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.searchbar {
+  background-color: green;
+  grid-column: 1 / 4;
+}
+
+.welcome {
+  background-color: red;
+  grid-column: 1 / 3;
+}
+
+.options {
+  background-color: cyan;
+  grid-column: 3 / 5;
+}
+
+.header > div {
+  border: 1px solid black;
 }
 
 .main-content {
